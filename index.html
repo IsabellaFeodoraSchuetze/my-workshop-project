@@ -9,104 +9,101 @@
     <script src="https://kit.fontawesome.com/dd5b3d41df.js" crossorigin="anonymous"></script>
     <title>SheCodes Projekt</title>
 </head>
+<div id="wrap">
 
-
-
-<body> 
-    <div class="container">
-        <div class="weather-app">
-          <form class="search-form" id="search-form">
-            <div class="row">
-              <div class="col-6">
-                <input
-                  type="search"
-                  placeholder="Enter a city"
-                  autofocus="on"
-                  autocomplete="off"
-                  id="city-input"
-                />
-              </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                />
-              </div>
-              <div class="col-3">
-                <button
-                  id="current-location-button">
-                  Currently
-                </button>
-              </div>
-            </div>
-          </form>
-          <h1 id="city"></h1>
-          <ul>
-            <li id="date"></li>
-            <li id="description"></li>
-          </ul>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-6">
+                        <form id="search-form">
+                          <input type="text" placeholder="Enter a city" id="location-entry" autocomplete="off" autofocus="off"/>
+                          <input type="submit" value="submit" />
+                          </form>
+                          <button id="current-location-button">
+                            Current location
+                          </button>
           <div class="row">
-            <div class="col-6">
-              <div class="clearfix">
-                <div class="float-left">
-                  <span class="temperature" id="temperature"></span
-                  ><span class="units">°C</span>
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                              <h2 id="city-name">
+                                Copenhagen
+                              </h2>
+                              <h3 id="todays-date">
+                            
+                                Mon 20. November 
+                              <h3 id="current-time"> the current time</h3>
+                                <hr class="rounded">
+                              </h3>
+                              <div class = "p">Currently </br>
+                            <span id="temperature"> Current temperature </span>
+                              <div> 
+                    <p>
+                      <i class="fas fa-cloud-rain" id="precipiation"></i>
+                      <strong> Precipiation  <span id="humidity">2%</span></strong>
+                      <br>
+                     <i class="fas fa-water" id="humidity"></i>
+                     <strong>Humidity  <span id="humidity">32%</span></strong>
+                     <br>
+                     <i class="fas fa-wind" id="wind"></i>
+                      <strong> Wind <span id="humidity">3 km/h</span></strong>
+                      </p>
+
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
             </div>
           </div>
-        </div>
-      </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                  <div class="container">
-                    <h2>Weather forecast</h2>
-                    <h3>Next 5 days</h3>
-                    <hr class="rounded">
-                    <div class="row">
-  
-                      <div class="col-2">
-                        <p>Tue 21</br>
-                        ☀ 10°
-                        </p>
-                      </div>
-  
-                      <div class="col-2">
-                        <p>Wed 22</br>
+        </br>
+        </br>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+                <div class="container">
+                  <h2>Weather forecast</h2>
+                  <h3>Next 5 days</h3>
+                  <hr class="rounded">
+                  <div class="row">
+
+                    <div class="col-2">
+                      <p>Tue 21</br>
+                      ☀️ 10°
+                      </p>
+                    </div>
+
+                    <div class="col-2">
+                      <p>Wed 22</br>
+                      ☁️ 8°
+                      </p>
+                    </div>
+
+                    <div class="col-2">
+                      <p>Thur 23</br>
                         ☁️ 8°
                         </p>
-                      </div>
-  
-                      <div class="col-2">
-                        <p>Thur 23</br>
-                          ☁️ 8°
-                          </p>
-                      </div>
-  
-                      <div class="col-2">
-                        <p>Fri 24</br>
-                        ☀️ 15°
+                    </div>
+
+                    <div class="col-2">
+                      <p>Fri 24</br>
+                      ☀️ 15°
+                      </p>
+                    </div>
+
+                    <div class="col-2">
+                      <p>Sat 25</br>
+                        ☁️ 9°
                         </p>
                       </div>
-  
-                      <div class="col-2">
-                        <p>Sat 25</br>
-                          ☁️ 9°
-                          </p>
-                        </div>
-                      </div>
                     </div>
-                </div>
-             
-            
+                  </div>
+              </div>
     <script src="src/index.js"></script>
   </body>
   </html>
