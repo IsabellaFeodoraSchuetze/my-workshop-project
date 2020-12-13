@@ -10,6 +10,7 @@
     <title>SheCodes Projekt</title>
 </head>
 <body>
+    <div id="wrap">
 <div class="row">
     <div class="col-sm-12">
         <div class="card">
@@ -33,12 +34,12 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="form-control btn btn-primary shadow-sm w-100"
+                  class="button-search"
                 />
               </div>
               <div class="col-3">
                 <button
-                  class="btn btn-success w-100"
+                  class="button-current"
                   id="current-location-button"
                 >
                   Current
@@ -56,7 +57,7 @@
               <div class="clearfix">
                 <div class="float-left">
                   <span class="temperature" id="temperature"></span
-                  ><span class="units">°C</span>
+                  ><span class="temperature">°C</span>
                 </div>
               </div>
             </div>
@@ -69,11 +70,55 @@
           </div>
         </div>
       </div>
-      
    </div>
         </div>
       </div>
     </div>
+<br>
+ <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+                <div class="container">
+                  <h2>Weather forecast</h2>
+                  <h3>Next 5 days</h3>
+                  <hr class="rounded">
+                  <div class="row">
+
+                    <div class="col-2">
+                      <p>Tue 21</br>
+                      ☀️ 10°
+                      </p>
+                    </div>
+
+                    <div class="col-2">
+                      <p>Wed 22</br>
+                      ☁️ 8°
+                      </p>
+                    </div>
+
+                    <div class="col-2">
+                      <p>Thur 23</br>
+                        ☁️ 8°
+                        </p>
+                    </div>
+
+                    <div class="col-2">
+                      <p>Fri 24</br>
+                      ☀️ 15°
+                      </p>
+                    </div>
+
+                    <div class="col-2">
+                      <p>Sat 25</br>
+                        ☁️ 9°
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+</div>
+
     <script src="src/script.js"></script>
   </body>
   </html>

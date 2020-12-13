@@ -10,6 +10,30 @@ body {
     margin: auto;
     padding: 15px;
   }
+
+  h1 {
+    color:#7c9fa5;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  ul {
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+ #date {
+  color:#7c9fa5;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#description {
+  color:#7c9fa5;
+  font-size: 24px;
+  font-weight: 400;
+}
+
   
   h2 {
     font-size: 24px;
@@ -50,7 +74,39 @@ body {
 
   .temperature {
     color:#7c9fa5;
-    font-size: 64px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 1;
+  }
+
+.button-search {   
+    background: #7c9fa5;
+    color: #fce2e5;
+    font-size: 16px;
+    padding: 8px 30px;
+    border-radius: 15px;
+    transition: all 200ms ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  button:hover {
+    background: #fce2e5;
+    color: #7c9fa5;
+  }
+
+  .button-current {   
+    background: #fce2e5;
+    color: #7c9fa5;
+    font-size: 16px;
+    padding: 8px 30px;
+    border-radius: 15px;
+    transition: all 200ms ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  button:hover {
+    background: #7c9fa5;
+    color: #fce2e5;
   }
