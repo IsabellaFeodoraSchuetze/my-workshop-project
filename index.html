@@ -9,115 +9,62 @@
     <script src="https://kit.fontawesome.com/dd5b3d41df.js" crossorigin="anonymous"></script>
     <title>SheCodes Projekt</title>
 </head>
-
-
-
-<div id="wrap">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-6">
-                        <form id="search-form">
-                          <input type="search" 
-                          placeholder="Enter a city" 
-                          id="city-input" 
-                          autocomplete="off" 
-                          autofocus="off"
-                          />
-                          <input 
-                          type="submit" 
-                          value="search"
-                          />
-                          </form>
-                          <button 
-                          id="current-location-button">
-                            Current location
-                          </button>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                              <h2 id="city">
-                              </h2>
-                              <h3 id="date"></h3>
-                              <h3 id="description"></h3>
-                                <hr class="rounded">
-                              </h3>
-
-                              <div>
-                                <span class="temperature" id="temperature"></span
-                                ><span class="units">°C</span>
-                              </div>
-        
-                              <div class="col-6">
-                                <ul>
-                                  <li>Humidity: <span id="humidity"></span>%</li>
-                                  <li>Wind: <span id="wind"></span> km/h</li>
-                                </ul>
-                              </div>
-        
-                   
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </br>
-        </br>
-      
-      
-        <div class="row">
-        <div class="col-sm-12">
-          <div class="card">
-            <div class="card-body">
-                <div class="container">
-                  <h2>Weather forecast</h2>
-                  <h3>Next 5 days</h3>
-                  <hr class="rounded">
-                  <div class="row">
-
-                    <div class="col-2">
-                      <p>Tue 21</br>
-                      ☀️ 10°
-                      </p>
-                    </div>
-
-                    <div class="col-2">
-                      <p>Wed 22</br>
-                      ☁️ 8°
-                      </p>
-                    </div>
-
-                    <div class="col-2">
-                      <p>Thur 23</br>
-                        ☁️ 8°
-                        </p>
-                    </div>
-
-                    <div class="col-2">
-                      <p>Fri 24</br>
-                      ☀️ 15°
-                      </p>
-                    </div>
-
-                    <div class="col-2">
-                      <p>Sat 25</br>
-                        ☁️ 9°
-                        </p>
-                      </div>
-
-                    
-                    </div>
-                  </div>
+<body>
+    <div class="container">
+        <div class="weather-app">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm w-100"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
               </div>
             </div>
+          </form>
+          <h1 id="city"></h1>
+          <ul>
+            <li id="date"></li>
+            <li id="description"></li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="temperature" id="temperature"></span
+                  ><span class="units">°C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+
     <script src="src/index.js"></script>
   </body>
   </html>
